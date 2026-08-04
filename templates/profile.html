@@ -22,49 +22,34 @@
                 <legend>Generate Budget</legend>
                 <div class="cityInfo">
                     <label for="fromcity">From (City)</label><br>
-                    <input type="text"><br><br>
+                    <input type="text" name="fromcity" id="fromcity" required><br><br>
                     <label for="tocity">To (City)</label><br>
-                    <input type="text"><br><br>
+                    <input type="text" name="tocity" id="tocity" required><br><br>
                 </div>
                 <div class="numbers">
                     <label for="people">No. of People</label><br>
-                    <input type="number" name="people" id="people" min="1"><br><br>
+                    <input type="number" name="people" id="people" min="1" required><br><br>
                     <label for="rooms">No. of the rooms</label><br>
-                    <input type="number" name="rooms" id="rooms" min="1"><br><br>
+                    <input type="number" name="rooms" id="rooms" min="1" required><br><br>
                 </div>
                 <div class="dates">
                     <label for="checkIn">Check In (Date)</label><br>
-                    <input type="date" name="checkIn" id="checkIN"><br><br>
+                    <input type="date" name="checkIn" id="checkIn" required><br><br>
                     <label for="checkOut">check Out (Date)</label><br>
-                    <input type="date" name="checkOut" id="checkOut"><br><br>
+                    <input type="date" name="checkOut" id="checkOut" required><br><br>
                 </div>
                 <div class="budgetMode">
                     <label for="mode">Budget Mode</label><br>
-                    <input type="radio" name="mode" id="low">
+                    <input type="radio" name="mode" id="low" value="LOW">
                     <label for="low">Low</label>
-                    <input type="radio" name="mode" id="medium">
+                    <input type="radio" name="mode" id="medium" value="MEDIUM">
                     <label for="medium">Medium</label>
-                    <input type="radio" name="mode" id="high" checked>
+                    <input type="radio" name="mode" id="high" value="HIGH" checked>
                     <label for="high">High</label><br><br>
                 </div>
                 <div class="currency">
-                    <label for="fromCurrency">From (Currency)</label>
-                    <select name="fromCurrency" id="fromCurrency">
-                        <option value="" disabled selected>Select base currency...</option>
-                        <option value="USD">United States Dollar (USD)</option>
-                        <option value="EUR">Euro (EUR)</option>
-                        <option value="JPY">Japanese Yen (JPY)</option>
-                        <option value="GBP">British Pound Sterling (GBP)</option>
-                        <option value="AUD">Australian Dollar (AUD)</option>
-                        <option value="CAD">Canadian Dollar (CAD)</option>
-                        <option value="CHF">Swiss Franc (CHF)</option>
-                        <option value="CNY">Chinese Yuan Renminbi (CNY)</option>
-                        <option value="HKD">Hong Kong Dollar (HKD)</option>
-                        <option value="SGD">Singapore Dollar (SGD)</option>
-                        <option value="INR">Indian Rupee (INR)</option>
-                    </select><br><br>
                     <label for="toCurrency">To (Currency)</label>
-                    <select name="toCurrency" id="toCurrency">
+                    <select name="toCurrency" id="toCurrency" required>
                         <option value="" disabled selected>Select base currency...</option>
                         <option value="USD">United States Dollar (USD)</option>
                         <option value="EUR">Euro (EUR)</option>

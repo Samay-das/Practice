@@ -1,0 +1,36 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environments and dependencies
+.venv/
+venv/
+ENV/
+env/
+pythonenv*/
+lib/
+lib64/
+include/
+bin/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Flask configuration and secrets
+.env
+.flaskenv
+instance/
+*.secret
+
+# IDEs and Editors
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS generated files
+.DS_Store
+Thumbs.db
